@@ -392,6 +392,12 @@ button:hover {
   cursor: pointer;
 }
 
+.fa-bars , .fa-xmark{
+  position: absolute;
+  top: -30px;
+}
+
+
 
 /* --------------------------------css-for-small-screens-------------------------------- */
 
@@ -418,10 +424,15 @@ button:hover {
   }
 
   .fa-bars{
+    font-size: 20px;
     position: absolute;
     left: 90%;
     top: 20px;
   }
+  .fa-xmark{
+    font-size: 20px;
+  }
+
   body,
   h1,
   h2,
