@@ -420,7 +420,7 @@ button:hover {
     font-size: 38px;
     position: absolute;
     top: 30%;
-    left: -5%;
+    left: -15%;
   }
 
   .search,
@@ -494,15 +494,9 @@ button:hover {
     display: none;
   }
 
-  .controls {
-    display: flex;
-    position: absolute;
-    top: 420px;
-    left: 150px;
-    font-size: 30px;
-  }
 
   .product {
+    position: relative;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
@@ -537,7 +531,12 @@ button:hover {
 
   /* -----------------------product-page------------------------- */
 
-
+#productPage{
+  position: relative;
+}
+.butn{
+  display: none;
+}
   .detail {
     background: #fff;
     padding: 30px;
@@ -554,11 +553,17 @@ button:hover {
 
   .detail {
     display: absolute;
-    top: 690%;
-    width: 95%;
-    left: 2.5%;
+    top: 70%;
+    width: 100%;
+    padding: 10px;
   }
-
+  .controls {
+    display: flex;
+    position: absolute;
+    top: 300%;
+    left: 30%;
+    font-size: 30px;
+  }
   .name h1 {
     color: black;
     font-size: 20px;
@@ -567,7 +572,7 @@ button:hover {
 
   .gallery {
     position: absolute;
-    top: 640%;
+    top: 10%;
     z-index: 2;
     display: inline;
     width: 90%;
@@ -586,12 +591,15 @@ button:hover {
 
   .detail {
     position: absolute;
-    text-align: center;
+    text-align: left;
   }
 
-  .detail h1,
-  .detail h2 {
+  .detail h1{
     text-align: center;
+  }
+  .detail h2 {
+    text-align: left;
+    margin-top: 10px;
   }
 
   .size-select,
@@ -612,12 +620,13 @@ button:hover {
   #buy {
     position: absolute;
     top: 90%;
-    left: 40%;
+    left: 38%;
     background: #553ffa;
     color: #ffffff;
     font-size: 15px;
     width: 100px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     margin-left: -4px;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
