@@ -2,17 +2,23 @@ let productImg = document.getElementById("productImg");
 let btn = document.getElementsByClassName("btn");
 let names = document.getElementById("names");
 let prices = document.getElementById("prices");
+let page = document.getElementById("productPage")
 
 const onClick = function () {
     let text = this.innerText
     names.innerText = text
 
-    console.log(names.innerText);
+    page.style.display = "block"
+    
+    productImg.src = `resources/men/${names.innerText}/image1.png`
+
     for (let i = 0; i < btn.length; i++) {
         btn[i].addEventListener("click", function () {
-            productImg.src = `resources/men/${names.innerText}/image${i + 1}.png`;
-            removeActiveClass();
-            this.classList.add("active");
+                productImg.src = `resources/men/${names.innerText}/image${i + 1}.png`;
+                removeActiveClass();
+                this.classList.add("active");
+                resetBtn();
+
         });
         function removeActiveClass() {
             for (let i = 0; i < btn.length; i++) {
@@ -21,6 +27,7 @@ const onClick = function () {
         }
     }
 }
+
 document.getElementById('new1').onclick = onClick;
 document.getElementById('new2').onclick = onClick;
 document.getElementById('new3').onclick = onClick;
