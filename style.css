@@ -391,3 +391,158 @@ button:hover {
   box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
   cursor: pointer;
 }
+
+
+/* --------------------------------css-for-small-screens-------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+  nav {
+    display: block;
+  }
+  nav h1{
+    padding-top: 10px;
+  }
+  .details{
+    font-size: 40px;
+  }
+  .details span{
+    font-size: 38px;
+    position: absolute;
+    top: 30%;
+    left: -5%;
+  }
+  .search,
+  .detailed {
+    display: none;
+  }
+
+  .fa-bars{
+    position: absolute;
+    left: 90%;
+    top: 20px;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  #header {
+    width: 100%;
+    height: 40vh;
+  }
+  #header img{
+    height: 30vh;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    /* Add some padding to prevent content from touching the edges */
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+button{
+  display: none;
+}
+button .fa-solid{
+  display: none;
+}
+  .product {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .list {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: scale 0.5s;
+    cursor: pointer;
+  }
+  /* Adjust header styles for smaller screens */
+  #header {
+    text-align: center;
+  }
+
+  #header nav {
+    flex-direction: column;
+  }
+
+  #header ul {
+    margin-top: 20px;
+  }
+
+  #header form {
+    flex-direction: column;
+  }
+
+  /* Adjust product layout for smaller screens */
+  .product .list {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  /* Ensure images resize properly */
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust product detail layout */
+  .detail {
+    text-align: left;
+  }
+
+  .detail h1,
+  .detail h2 {
+    text-align: center;
+  }
+
+  .size-select,
+  .quantity-select {
+    margin-top: 20px;
+  }
+
+  .size-select label,
+  .quantity-select p {
+    margin-right: 10px;
+  }
+
+  /* Adjust footer styles */
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
+}
