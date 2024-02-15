@@ -392,7 +392,8 @@ button:hover {
   cursor: pointer;
 }
 
-.fa-bars , .fa-xmark{
+.fa-bars,
+.fa-xmark {
   position: absolute;
   top: -30px;
 }
@@ -406,30 +407,35 @@ button:hover {
   nav {
     display: block;
   }
-  nav h1{
+
+  nav h1 {
     padding-top: 10px;
   }
-  .details{
+
+  .details {
     font-size: 40px;
   }
-  .details span{
+
+  .details span {
     font-size: 38px;
     position: absolute;
     top: 30%;
     left: -5%;
   }
+
   .search,
   .detailed {
     display: none;
   }
 
-  .fa-bars{
+  .fa-bars {
     font-size: 20px;
     position: absolute;
     left: 90%;
     top: 20px;
   }
-  .fa-xmark{
+
+  .fa-xmark {
     font-size: 20px;
   }
 
@@ -443,11 +449,13 @@ button:hover {
     margin: 0;
     padding: 0;
   }
+
   #header {
     width: 100%;
     height: 40vh;
   }
-  #header img{
+
+  #header img {
     height: 30vh;
     width: 100%;
   }
@@ -456,8 +464,8 @@ button:hover {
     width: 100%;
     max-width: 100%;
     padding: 0 10px;
-    /* Add some padding to prevent content from touching the edges */
   }
+
   nav ul {
     background: #ff004f;
     position: fixed;
@@ -469,23 +477,31 @@ button:hover {
     z-index: 2;
     transition: right 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 25px;
-}
+  }
 
-nav ul .fa-solid {
+  nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
-}
-button{
-  display: none;
-}
-button .fa-solid{
-  display: none;
-}
+  }
+
+  button .fa-solid {
+    display: none;
+  }
+
+  .controls {
+    display: flex;
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    font-size: 30px;
+  }
+
   .product {
     display: grid;
     grid-template-columns: auto auto;
@@ -493,6 +509,7 @@ button .fa-solid{
     padding: 10px;
     margin-top: 10px;
   }
+
   .list {
     border-radius: 10px;
     position: relative;
@@ -500,7 +517,7 @@ button .fa-solid{
     transition: scale 0.5s;
     cursor: pointer;
   }
-  /* Adjust header styles for smaller screens */
+
   #header {
     text-align: center;
   }
@@ -517,21 +534,59 @@ button .fa-solid{
     flex-direction: column;
   }
 
-  /* Adjust product layout for smaller screens */
-  .product .list {
+
+  /* -----------------------product-page------------------------- */
+
+
+  .detail {
+    background: #fff;
+    padding: 30px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .products .list {
     width: 100%;
     margin: 0 auto 20px;
   }
 
-  /* Ensure images resize properly */
-  .product img {
+  .detail {
+    display: absolute;
+    top: 690%;
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .name h1 {
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .gallery {
+    position: absolute;
+    top: 640%;
+    z-index: 2;
+    display: inline;
+    width: 90%;
+    height: 15vh;
+    left: 5%;
+  }
+
+  .gallery img {
+    height: 50px;
+  }
+
+  .products img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Adjust product detail layout */
   .detail {
-    text-align: left;
+    position: absolute;
+    text-align: center;
   }
 
   .detail h1,
@@ -549,11 +604,24 @@ button .fa-solid{
     margin-right: 10px;
   }
 
-  /* Adjust footer styles */
   .footer {
     text-align: center;
     padding: 20px 0;
   }
 
+  #buy {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background: #553ffa;
+    color: #ffffff;
+    font-size: 15px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: -4px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+  }
 
 }
