@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav h1 {
+    width: 140px;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+nav h1 span {
+    color: #ff004f;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+input {
+    width: 300px;
+    height: 38px;
+    padding: 10px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.search button {
+    height: 34px;
+    width: 34px;
+    padding: 0 10px;
+    margin-left: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 85.5%;
+    top: 2px;
+}
+
+form button {
+    height: 35px;
+    padding: 0 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+button:hover {
+    background: #ff004f;
+}
+
+#header img {
+    width: 100%;
+    height: 90vh;
+}
+
+.details {
+    font-size: 90px;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.details span{
+    color: #ff004f;
+    margin-left: 23%;
+    font-size: 85px;
+    font-family: "Libre Baskerville", serif;
+}
+.detailed{
+    margin-top: -30px;
+    font-size: 22px;
+    position: absolute;
+    left: 60%;
+    top: 52%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.last{
+    position: absolute;
+    left: 76%;
+    top: 63%;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+#new-featured{
+    margin-top: 20px;
+}
+#new-featured h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    margin-top: 50px;
+}
+.list{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: scale 0.5s;
+    cursor: pointer;
+}
+.list:hover{
+    scale: 1.1;
+}
+.list img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ffffff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+}
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+}
+.layer p{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.list:hover .layer {
+    height: 100%;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+/* ------------------------------product-page---------------------------- */
+
+
+#productPage{
+    /* display: none; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.contain{
+  width: 100%;
+  min-height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+}
+
+.gallery {
+  flex-basis: 80%;
+  background: #241e20;
+  transform: scale(1.05);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #553ff0;
+}
+
+.detail {
+  flex-basis: 53%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+
+.name h1 {
+  color: black;
+  font-size: 35px;
+}
+
+.detail h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px; 
+}
+
+.detail h3 {
+  color: #00d874;
+  margin-bottom: 10px; 
+}
+
+#para {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px; 
+}
+
+#select {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px; 
+}
+
+.size-select,
+.color-select,
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.size-select #para,
+.quantity-select #para {
+  width: 70px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.size-select input:checked + span {
+  color: blue;
+  font-weight: 600;
+}
+
+.size-select input,
+.color-select input {
+  display: none;
+  margin-right: 5px;
+}
+
+.size-select span,
+.color-select span {
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.quantity-select input {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: 2px 2px 2px 15px;
+  width: 50px;
+  border-radius: 12px;
+}
+
+#buy{
+  background: #553ffa;
+  color: #ffffff;
+  font-size: 14px;
+  width: 150%;
+  padding: 20px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  margin-top: 20px; 
+  box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+  cursor: pointer;
+}
