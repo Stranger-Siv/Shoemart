@@ -15,7 +15,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: blue;
 }
 
 #header {
